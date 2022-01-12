@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Department</title>
+    <link rel="stylesheet" href="/css/addDepartment.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h2>Add Departments</h2>
+    </header>
+
+
+    <div class="container">
+        <table>
+            <tr>
+                <td> <span>Department Id</span></td>
+                <td> <input class="addId" type="text" name="departmentId" id="" placeholder="Enter Department Id "></td>
+            </tr>
+            <tr>
+                <td> <span>Department Name</span></td>
+                <td><input class="addName" type="text" name="departmentName" id="" placeholder="Enter Department name"></td>
+            </tr>
+        </table>
+
+        <input class="add" type="button" value="Add">
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Department Added</p>
+        </div>
+    </div>
+
+    <script src="/js/addDepartment.js"></script>
+</body>
+
+</html>

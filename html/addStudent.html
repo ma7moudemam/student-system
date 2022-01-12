@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Student</title>
+    <link rel="stylesheet" href="/css/addStudent.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h2>Add Student</h2>
+    </header>
+
+    <div class="container">
+        <table>
+            <tr>
+                <td> <span>student Name</span></td>
+                <td> <input class="addStudent" type="text" name="studentName" id="" placeholder="Enter your name"></td>
+                <td><span class="errorMsg">Enter Student Name</span></td>
+            </tr>
+            <tr>
+                <td> <span>student Department</span></td>
+                <td><select name="departmet" id="dep">
+                </select></td>
+            </tr>
+        </table>
+        <input class="add" type="button" value="Add">
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Student Added</p>
+        </div>
+    </div>
+
+    <script src="/js/addStudent.js"></script>
+</body>
+
+</html>

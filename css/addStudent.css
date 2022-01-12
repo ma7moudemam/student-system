@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+}
+
+header {
+    font-size: 28px;
+    height: 80px;
+    text-align: center;
+    box-shadow: 0 0 10px #ddd;
+    color: red;
+    margin-bottom: 50px;
+}
+
+div .container {
+    display: flex;
+    width: 400px;
+    text-align: center;
+}
+
+table {
+    margin: 0 auto;
+    font-size: 22px;
+}
+
+td {
+    padding: 10px;
+}
+
+table td span {
+    color: red;
+    font-weight: bold;
+}
+
+table td input {
+    padding: 8px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    width: 250px;
+    outline: none;
+    background-color: #ddd;
+    text-align: center;
+}
+
+table td select {
+    width: 250px;
+    padding: 8px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #ddd;
+    text-align: center;
+}
+
+.add {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 250px;
+    padding: 8px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #ddd;
+    text-align: center;
+    transition: .3s;
+}
+
+.add:hover {
+    color: white;
+    background-color: #333;
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content/Box */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+    text-align: center;
+    color: red;
+}
+
+
+/* The Close Button */
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
