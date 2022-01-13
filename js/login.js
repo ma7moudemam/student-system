@@ -6,7 +6,7 @@ let userPassword = document.querySelector('.pass');
 let userNameLocal = localStorage.getItem("userName");
 let userPassLocal = localStorage.getItem("password");
 
-var loginUser = false;
+let loginUser = false;
 // login btn
 let login = document.querySelector('.loginBtn')
     .addEventListener('click', function() {

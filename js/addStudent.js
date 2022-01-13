@@ -37,6 +37,7 @@ let span = document.querySelector('.close');
 
 
 let errorMessage = document.querySelector('.errorMsg');
+
 errorMessage.style.display = "none";
 let addButton = document.querySelector('.add')
     .addEventListener('click', async function() {
@@ -44,9 +45,9 @@ let addButton = document.querySelector('.add')
         // let departmentName = document.querySelector('select');
         // let depName = departmentName.options[departmentName.selectedIndex].text;
 
-        if (studnetName.value == null && studnetName.value == false) {
+        if (studnetName.value == null || studnetName.value == false || studnetName.value == undefined) {
             errorMessage.style.display = "block";
-
+            studnetName.focus();
         } else {
             let response = await fetch("https://node-monge-iti-project.herokuapp.com/students", {
                 method: "post",
@@ -55,7 +56,7 @@ let addButton = document.querySelector('.add')
             });
             let data = await response.json();
             console.log(data, typeof data);
-
+            errorMessage.style.display = "none";
             modal.style.display = "block";
         }
 

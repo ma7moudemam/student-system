@@ -23,10 +23,6 @@ async function renderUsers() {
 
     students.forEach(student => {
 
-
-
-
-
         // Add student name
         let createdTr = document.createElement('tr');
         let htmlSegment = `

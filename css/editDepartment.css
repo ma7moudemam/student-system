@@ -139,6 +139,8 @@ div .container {
     /* Could be more or less, depending on screen size */
     text-align: center;
     color: red;
+    font-size: 22px;
+    font-weight: bold;
 }
 
 
